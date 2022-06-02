@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First jQuery Mobile Application</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-
+1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-
+1.4.5.min.js"></script>
+  <script src=“script.js"></script>
+  <link rel="stylesheet" type="text/css" href=“site.css">
+
+</head>
+
+<body>
+
+  <div data-role="page" id="page">
+    <div data-role="header" data-theme='b'>
+      <a href="index.html" data-icon="home" data-theme='b'>Home</a>
+      <h1>Welcome to play my three games!</h1>
+    </div>
+
+    <div data-role="content" data-theme='e'>
+      <ul>
+        Please click Mad Libs List first. Mad Libs is the most completed game so far. <br><br>
+        <li><a href="#page1" style="text-decoration: none;" data-icon="home" data-theme='b'>Mad Libs</a></li>
+        <li><a href="#page2" style="text-decoration: none;" data-icon="home" data-theme='b'>Rock Paper Scissors</a></li>
+        <li><a href="#page3" style="text-decoration: none;" data-icon="home" data-theme='b'>Zip Zap</a></li>
+        <li><a href="#page4" style="text-decoration: none;" data-icon="home" data-theme='b'>ML List </a></li>
+        <li><a href="#page5" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS List </a></li>
+        <li><a href="#page6" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ List</a></li>
+        <li><a href="#page7" style="text-decoration: none;" data-icon="home" data-theme='b'>ML Details</a></li>
+        <li><a href="#page8" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS Details </a></li>
+        <li><a href="#page9" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ Details </a></li>
+      </ul>
+
+    </div>
+
+    <div data-role="footer" data-theme='b'>
+      <h2>Home footer</h2>
+    </div>
+  </div>
+
+  <div data-role="page" id="page1">
+    <div data-role="header">
+      <a href="index.html" data-icon="home" data-theme='b'>Home</a>
+      <h1>Welcome to play Mad Libs!</h1>
+    </div>
+
+    <div data-role="content">
+      <ul>
+
+        <li><a href="#page2" style="text-decoration: none;" data-icon="home" data-theme='b'>Rock Paper Scissors</a></li>
+        <li><a href="#page3" style="text-decoration: none;" data-icon="home" data-theme='b'>Zip Zap</a></li>
+        <li><a href="#page4" style="text-decoration: none;" data-icon="home" data-theme='b'>ML List </a></li>
+        <li><a href="#page5" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS List </a></li>
+        <li><a href="#page6" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ List</a></li>
+        <li><a href="#page7" style="text-decoration: none;" data-icon="home" data-theme='b'>ML Details</a></li>
+        <li><a href="#page8" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS Details </a></li>
+        <li><a href="#page9" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ Details </a></li>
+
+        <h4>Game Rule</h4>
+        One player acts as the “reader” and asks the other players, who haven't seen the story, to fill in the blanks
+        with adjectives, nouns, exclamations, colors, adjectives, and more.<br>
+        These words are inserted into the blanks and then the story is read aloud to hilarious results. There are no
+        winners or losers, only laughter.<br><br>
+
+      </ul>
+
+      Enter a noun <br />
+      <input type="text" value="" id="noun" />
+      Enter a verb <br />
+      <input type="text" value="" id="verb" />
+      Enter another noun <br />
+      <input type="text" value="" id="anoun" />
+
+      <input type="button" value="Click To Play" id="playMadlibs" data-inline="true" />
+      <input type="button" value="Clear Data" id="buttonClear" data-inline="true" />
+
+    </div>
+
+    <div data-role="footer">
+      <h2>Mad Libs footer</h2>
+    </div>
+  </div>
+
+  <div data-role="page" id="page2">
+    <div data-role="header">
+      <a href="index.html" data-icon="home" data-theme='b'>Home</a>
+      <h1>Welcome to play Rock Paper Scissors!</h1>
+    </div>
+
+    <div data-role="content">
+      <h4>Game Rule</h4>
+      <ul>
+        If one player picks rock and the other paper, the player who showed rock succeeds.<br>
+        If one player picks paper and the other paper, then it's a tie.<br>
+        If one player picks scissors and the other paper, the player who showed scissors succeeds.<br><br>
+
+        <li><a href="#page1" style="text-decoration: none;" data-icon="home" data-theme='b'>Mad Libs</a></li>
+        <li><a href="#page3" style="text-decoration: none;" data-icon="home" data-theme='b'>Zip Zap</a></li>
+        <li><a href="#page4" style="text-decoration: none;" data-icon="home" data-theme='b'>ML List </a></li>
+        <li><a href="#page5" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS List </a></li>
+        <li><a href="#page6" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ List</a></li>
+        <li><a href="#page7" style="text-decoration: none;" data-icon="home" data-theme='b'>ML Details</a></li>
+        <li><a href="#page8" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS Details </a></li>
+        <li><a href="#page9" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ Details </a></li>
+      </ul>
+    </div>
+
+    <h2>Make your choice: </h2>
+    <button id="rock" class="button">rock</button>
+    <button id="paper" class="button">paper</button>
+    <button id="scissors" class="button">scissors</button>
+    <button id="computer" style="display:none;"></button>
+    <button id="rockuser" style="display:none;"></button>
+    <button id="paperuser" style="display:none;"></button>
+    <button id="scissorsuser" style="display:none;"></button>
+    <br>
+
+    <div id="user">
+      <h2>User: </h2>
+    </div>
+
+    <div class="userresult">
+      <p id="display11"></p>
+    </div>
+
+    <div id="computer">
+      <h2>Computer: </h2>
+    </div>
+
+    <div class="computerresult">
+      <p id="display10"></p>
+    </div>
+
+    <div id="result">
+      <h2>Result: </h2>
+    </div>
+
+    <div class="gameresult">
+      <p id="display1"></p>
+    </div>
+
+    <div data-role="footer">
+      <h2>Rock Paper Scissors footer</h2>
+    </div>
+  </div>
+
+  <div data-role="page" id="page3">
+    <div data-role="header">
+      <a href="index.html" data-icon="home" data-theme='b'>Home</a>
+      <h1>Welcome to play Zip Zap！</h1>
+    </div>
+
+    <div data-role="content">
+      <h4>Game Rule</h4>
+      <ul>
+        Make up all names to start.<br>
+        Assign all names to numbers.<br>
+        Random pick one number.<br>
+        You have to guess out what's the name from that number.<br>
+        If your guess is right, then you win; otherwise, you lose.<br><br>
+
+        <li><a href="#page1" style="text-decoration: none;" data-icon="home" data-theme='b'>Mad Libs</a></li>
+        <li><a href="#page2" style="text-decoration: none;" data-icon="home" data-theme='b'>Rock Paper Scissors</a></li>
+        <li><a href="#page4" style="text-decoration: none;" data-icon="home" data-theme='b'>ML List </a></li>
+        <li><a href="#page5" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS List </a></li>
+        <li><a href="#page6" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ List</a></li>
+        <li><a href="#page7" style="text-decoration: none;" data-icon="home" data-theme='b'>ML Details</a></li>
+        <li><a href="#page8" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS Details </a></li>
+        <li><a href="#page9" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ Details </a></li>
+      </ul>
+
+      Enter a Name <br />
+      <input type="text" value="" id="name" />
+
+      <input type="button" value="Click To Play" id="playZipzap" data-inline="true" />
+      <input type="button" value="Clear Data" id="buttonClearZz" data-inline="true" />
+
+    </div>
+
+    <div data-role="footer">
+      <h2>Zip Zap footer</h2>
+    </div>
+  </div>
+
+  <div data-role="page" id="page4">
+    <div data-role="header" data-theme='b'>
+      <a href="index.html" data-icon="home" data-theme='b'>Home</a>
+      <h1>Welcome to check Mad Libs' results!</h1>
+    </div>
+
+    <div data-role="content" data-theme='e'>
+      <ul>
+        <li><a href="#page1" style="text-decoration: none;" data-icon="home" data-theme='b'>Mad Libs</a></li>
+        <li><a href="#page2" style="text-decoration: none;" data-icon="home" data-theme='b'>Rock Paper Scissors</a></li>
+        <li><a href="#page3" style="text-decoration: none;" data-icon="home" data-theme='b'>Zip Zap</a></li>
+        <li><a href="#page5" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS List </a></li>
+        <li><a href="#page6" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ List</a></li>
+        <li><a href="#page7" style="text-decoration: none;" data-icon="home" data-theme='b'>ML Details</a></li>
+        <li><a href="#page8" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS Details </a></li>
+        <li><a href="#page9" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ Details </a></li>
+      </ul>
+      <p> Here are the inputs of Mad Libs: </p>
+      <div id="MadlibsList">
+        <ul id="mllist" data-role="listview"></ul>
+      </div>
+      <br>
+      <input type="button" value="Sort By Verb" id="buttonSortVerb" data-inline="true" /><br>
+      <input type="button" value="Press Here For Replay" id="buttonForReplay" data-inline="true" />
+    </div>
+
+    <div data-role="footer" data-theme='b'>
+      <h2>Mad Libs List footer</h2>
+    </div>
+  </div>
+
+  <div data-role="page" id="page5">
+    <div data-role="header" data-theme='b'>
+      <a href="index.html" data-icon="home" data-theme='b'>Home</a>
+      <h1>Welcome to check Rock Paper Scissors List! </h1>
+    </div>
+
+    <div data-role="content" data-theme='e'>
+      <ul>
+        <li><a href="#page1" style="text-decoration: none;" data-icon="home" data-theme='b'>Mad Libs</a></li>
+        <li><a href="#page2" style="text-decoration: none;" data-icon="home" data-theme='b'>Rock Paper Scissors</a></li>
+        <li><a href="#page3" style="text-decoration: none;" data-icon="home" data-theme='b'>Zip Zap</a></li>
+        <li><a href="#page4" style="text-decoration: none;" data-icon="home" data-theme='b'>ML List </a></li>
+        <li><a href="#page6" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ List</a></li>
+        <li><a href="#page7" style="text-decoration: none;" data-icon="home" data-theme='b'>ML Details</a></li>
+        <li><a href="#page8" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS Details </a></li>
+        <li><a href="#page9" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ Details </a></li>
+      </ul>
+      <p> Here are Rock Paper Scissors' results: </p>
+      <div id="RpsList">
+        <ul id="rpslist"></ul>
+      </div>
+
+      <input type="button" value="Sort By Verb" id="buttonSortVerb" data-inline="true" /><br><br>
+
+    </div>
+
+    <div data-role="footer" data-theme='b'>
+      <h2>Rock Paper Scissors Results footer</h2>
+    </div>
+  </div>
+
+  <div data-role="page" id="page6">
+    <div data-role="header" data-theme='b'>
+      <a href="index.html" data-icon="home" data-theme='b'>Home</a>
+      <h1>Welcome to check Zip Zap List! </h1>
+    </div>
+
+    <div data-role="content" data-theme='e'>
+      <ul>
+        <li><a href="#page1" style="text-decoration: none;" data-icon="home" data-theme='b'>Mad Libs</a></li>
+        <li><a href="#page2" style="text-decoration: none;" data-icon="home" data-theme='b'>Rock Paper Scissors</a></li>
+        <li><a href="#page3" style="text-decoration: none;" data-icon="home" data-theme='b'>Zip Zap</a></li>
+        <li><a href="#page4" style="text-decoration: none;" data-icon="home" data-theme='b'>ML List </a></li>
+        <li><a href="#page5" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS List </a></li>
+        <li><a href="#page7" style="text-decoration: none;" data-icon="home" data-theme='b'>ML Details</a></li>
+        <li><a href="#page8" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS Details </a></li>
+        <li><a href="#page9" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ Details </a></li>
+      </ul>
+      <p> Here are Zip Zap's results: </p>
+      <div id="ZzList">
+        <ul id="zzlist" data-role="listview"></ul>
+      </div>
+      <br>
+      <input type="button" value="Sort By Name" id="buttonSortName" data-inline="true" /><br><br>
+    </div>
+
+    <div data-role="footer" data-theme='b'>
+      <h2>Zip Zap Results footer</h2>
+    </div>
+  </div>
+
+  <div data-role="page" id="page7">
+    <div data-role="header" data-theme='b'>
+      <a href="index.html" data-icon="home" data-theme='b'>Home</a>
+      <h1>Mad Libs Details Page</h1>
+    </div>
+
+    <div data-role="content" data-theme='e'>
+      <h3>Here're the Mad Libs Details: </h3>
+      <h4>The quoted and original sentence is: </h4>
+      <h5>Your TIME is limited, so don't WASTE it living someone else's LIFE. </h5>
+      <p id="oneNoun"></p>
+      <p id="oneVerb"></p>
+      <p id="oneaNoun"></p>
+
+      <p id="thatMadlibsID"></p>
+
+      <ul>
+        <li><a href="#page1" style="text-decoration: none;" data-icon="home" data-theme='b'>Mad Libs</a></li>
+        <li><a href="#page2" style="text-decoration: none;" data-icon="home" data-theme='b'>Rock Paper Scissors</a></li>
+        <li><a href="#page3" style="text-decoration: none;" data-icon="home" data-theme='b'>Zip Zap</a></li>
+        <li><a href="#page4" style="text-decoration: none;" data-icon="home" data-theme='b'>ML List </a></li>
+        <li><a href="#page5" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS List </a></li>
+        <li><a href="#page6" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ List</a></li>
+        <li><a href="#page8" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS Details </a></li>
+        <li><a href="#page9" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ Details </a></li>
+      </ul>
+    </div>
+    <div data-role="footer" data-theme='b'>
+      <h2>Mad Libs List Sort footer</h2>
+    </div>
+  </div>
+
+  <!-- page8 is still under-construction. Needs to fix! -->
+  <div data-role="page" id="page8">
+    <div data-role="header" data-theme='b'>
+      <a href="index.html" data-icon="home" data-theme='b'>Home </a>
+      <h1>Rock Paper Scissors Details Page </h1>
+      
+    </div>
+
+    <div data-role="content" data-theme='e'>
+      <h3>Here're the Rock Paper Scissors' Details: </h3>
+      <h4>The game results are shown in the Rock Paper Scissors game page!  </h4>
+      <ul>
+        <li><a href="#page1" style="text-decoration: none;" data-icon="home" data-theme='b'>Mad Libs</a></li>
+        <li><a href="#page2" style="text-decoration: none;" data-icon="home" data-theme='b'>Rock Paper Scissors</a></li>
+        <li><a href="#page3" style="text-decoration: none;" data-icon="home" data-theme='b'>Zip Zap</a></li>
+        <li><a href="#page4" style="text-decoration: none;" data-icon="home" data-theme='b'>ML List </a></li>
+        <li><a href="#page5" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS List </a></li>
+        <li><a href="#page6" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ List</a></li>
+        <li><a href="#page7" style="text-decoration: none;" data-icon="home" data-theme='b'>ML Details</a></li>
+        <li><a href="#page9" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ Details </a></li>
+      </ul>
+    </div>
+
+    <div data-role="footer" data-theme='b'>
+      <h2>Mad Libs List Sort footer</h2>
+    </div>
+  </div>
+
+  <!-- page9 is still under-construction. Needs to fix! -->
+  <div data-role="page" id="page9">
+    <div data-role="header" data-theme='b'>
+      <a href="index.html" data-icon="home" data-theme='b'>Home </a>
+      <h1>Zip Zap Details Page </h1>
+    </div>
+    
+    <div data-role="content" data-theme='e'>
+      <p id="oneName"></p>
+      <p id="thatZipzapID"></p>
+      
+      <p> Here are Zip Zap's Details: </p><br>
+      <div id="ZzList">
+        <ul id="zzlist" data-role="listview"></ul>
+      </div>
+      <ul>
+        <li><a href="#page1" style="text-decoration: none;" data-icon="home" data-theme='b'>Mad Libs</a></li>
+        <li><a href="#page2" style="text-decoration: none;" data-icon="home" data-theme='b'>Rock Paper Scissors</a></li>
+        <li><a href="#page3" style="text-decoration: none;" data-icon="home" data-theme='b'>Zip Zap</a></li>
+        <li><a href="#page4" style="text-decoration: none;" data-icon="home" data-theme='b'>ML List </a></li>
+        <li><a href="#page5" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS List </a></li>
+        <li><a href="#page6" style="text-decoration: none;" data-icon="home" data-theme='b'>ZZ List</a></li>
+        <li><a href="#page7" style="text-decoration: none;" data-icon="home" data-theme='b'>ML Details</a></li>
+        <li><a href="#page8" style="text-decoration: none;" data-icon="home" data-theme='b'>RPS Details </a></li>
+      </ul>
+      <!--
+      <button onclick="createItem()">Create local storage item</button>
+      <button onclick="myFunction()">Get the item value</button> -->
+    </div>
+
+    <div data-role="footer" data-theme='b'>
+      <h2>Mad Libs List Sort footer</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
